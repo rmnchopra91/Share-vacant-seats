@@ -1,0 +1,15 @@
+{
+    "die":"ltr",
+    "lang": "en",
+    "name" : "Share Vacant Seat",
+    "scope": "/",
+    "display":"fullscreen",
+    "start_url":"http://localhost:8080",
+    "short_name" : "home",
+    "theme_color": "transparent",
+    "description": "Learning",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_application": [],
+    "prefer_related_application": false
+}
