@@ -13,10 +13,11 @@ import { AuthGuard } from "./auth-guard.service";
 
 const appRoutes: Routes = [
     {path: '', component: MainComponent},
-    {path: 'tab1', canActivate: [AuthGuard], component: MAuthenticationComponent},
-    {path: 'tab2', component: MShareRideComponent},
+    {path: 'verification', component: MAuthenticationComponent},
+    // {path: 'verification', canActivate: [AuthGuard], component: MAuthenticationComponent},
+    {path: 'shareRide', component: MShareRideComponent},
     {path: 'rideList', component: MRideListComponent},
-    {path: 'tab3', component: MRequestRideComponent}
+    {path: 'requestRide', component: MRequestRideComponent}
   ];
 
 @NgModule({
