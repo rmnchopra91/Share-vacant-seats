@@ -13,6 +13,9 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 import { MAuthenticationComponent } from './component/main/m-authentication/m-authentication.component';
 import { MShareRideComponent } from './component/main/m-share-ride/m-share-ride.component';
 import { MRequestRideComponent } from './component/main/m-request-ride/m-request-ride.component';
+import { AadharVerifyComponent } from './component/aadharVerify/aadharVerify.component';
+import { otpVerifyComponent } from './component/otpVerify/otpVerify.component';
+import { AvailableRidesComponent } from './component/availableRides/availableRides.component';
 import { AuthService } from './auth-service';
 import { AuthGuard } from './auth-guard.service';
 @NgModule({
@@ -24,7 +27,10 @@ import { AuthGuard } from './auth-guard.service';
     NavbarComponent,
     MAuthenticationComponent,
     MShareRideComponent,
-    MRequestRideComponent
+    MRequestRideComponent,
+    AadharVerifyComponent,
+    otpVerifyComponent,
+    AvailableRidesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

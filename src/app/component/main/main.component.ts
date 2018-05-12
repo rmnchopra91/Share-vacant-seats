@@ -13,8 +13,11 @@ export class MainComponent implements OnInit {
   ngOnInit() {
   }
 
-  onLoadShareRide(){
-    this.router.navigate(['/tab2']);
+  needRide(){
+    this.router.navigate(['/requestRide']);
+  }
+  shareRide(){
+    this.router.navigate(['/tab1']);
   }
 
 }

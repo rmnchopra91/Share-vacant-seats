@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-m-request-ride',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MRequestRideComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+  requestRide(){
+    this.router.navigate(['/aadharVerify']);
+  }
 }
