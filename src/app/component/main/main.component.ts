@@ -19,5 +19,21 @@ export class MainComponent implements OnInit {
   shareRide(){
     this.router.navigate(['/tab1']);
   }
+  changeRoute(route){
+    switch (route) {
+      case 'verification':
+        this.router.navigate(['/verification']);
+        break;
+      case 'requestRide':
+        this.router.navigate(['/requestRide']);  
+        break;
+      case 'shareRide':
+        this.router.navigate(['/shareRide']);
+        break;
+      default:
+        this.router.navigate(['/']);
+        break;
+    }
+  }
 
 }
